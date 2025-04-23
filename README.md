@@ -86,7 +86,7 @@ $$
 $$
 
 $$
-\text{Q1 2025 Est.} = \text{Q1\_2024} \times (1 + \text{Growth Rate})
+\text{Q1 2025 Est.} = \text{Q1 2024} \times \left(1 + \text{Growth Rate}\right)
 $$
 
 
