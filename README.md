@@ -1,5 +1,7 @@
 # Criteo Analytics Case Study 2025
 
+![Status Badge](https://img.shields.io/static/v1?label=STATUS&message=COMPLETE&color=008000)
+
 This project is an analytical solution for the Criteo case study, with the aim of generating strategic insights from simulated digital campaign data.
 
 
@@ -78,11 +80,10 @@ As the data for 2025 is not available, I used the data for 2023 and 2024 for the
 - Revenue Q1 2024: **US$ 298,461,921.57**
 - Annual growth: **+264.29%**
 - **Estimate Q1 2025:** **US$ 1,087,275,827.81**
-<br><br>
+
 $$
 \text{Growth Rate} = \left( \frac{\text{Q1 2024} - \text{Q1 2023}}{\text{Q1 2023}} \right) \times 100
 $$
-
 
 $$
 \text{Q1 2025 Est.} = \text{Q1\_2024} \times (1 + \text{Growth Rate})
@@ -94,8 +95,29 @@ $$
 
 ## 📈 Advanced Analysis
 
-### ✔️ Campaign efficiency by Advertiser (BR)
-- Cálculo de CTR, CPC e CPA por anunciante
+### ✔️ Campaign efficiency by Advertiser (Brazil Top 10 by Clicks)
+
+* CTR (Click-through rate): Clicks / Displays
+* CPC (Cost per click): Client_Revenue / Clicks
+* CPA (Cost per acquisition): Client_Revenue / Client_Sales
+
+| Advertiser_ID	| Clicks | Displays | Client_Sales | Client_Revenue	| CTR | CPC | CPA |
+|-|-|-|-|-|-|-|-|
+| A9	| 7720264	| 1392250876 | 309903 | 17,246,832.61 | 0.01 | 2.23	| 55.65 |
+| A24	| 5198795	| 652614462	 | 393661 | 12,744,086.39 | 0.01 | 2.45	| 32.37 | 
+| A13	| 4227974	| 975029266  | 125080 | 6,914,913.10  | 0.00 | 1.64	| 55.28 |
+| A33	| 2800175	| 407697994	 | 110680 | 14,463,447.89 | 0.01 | 5.17	| 130.68|
+| A5	| 2168307	| 250716739	 | 168229 | 4,638,622.80  | 0.01 | 2.14	| 27.57 |
+| A22	| 2101798	| 408402680	 | 49751  | 3,451,414.38  | 0.01 | 1.64	| 69.37 |
+| A99	| 993325	| 122836378	 | 11889  | 2,552,285.60  | 0.01 | 2.57	| 214.68|
+| A75	| 939631	| 176917053	 | 6237	  | 1,666,896.87  | 0.01 | 1.77	| 267.26|
+| A139	| 875097	| 123817233	 | 4403	  | 1,491,770.65  | 0.01 | 1.70	| 338.81|
+| A151	| 872824	| 139038811	 | 13627  | 555,114.52    | 0.01 | 0.64	| 40.74 |
+
+* Efficient campaigns (⬇️ CPC and CPA)
+* Very expensive campaigns (⬆️ CPC and CPA)
+
+![metrics](img/cpc_cpa.png)
 
 
 ### 🌍 Top Revenue by country and industry
